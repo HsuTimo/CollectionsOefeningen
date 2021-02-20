@@ -20,8 +20,9 @@ namespace Oef7
                 new Man("Simon","Young",DateTime.Parse("8/8/1945")),
                 new Man("Thomas","New",DateTime.Parse("5/7/1964")),
             };
+            humans.Sort();
             humans.ForEach(Console.WriteLine);
-            Human child = humans[6] + humans[1];
+            Human child = humans[6] + humans[3];
         }
     }
 }
