@@ -18,6 +18,7 @@ namespace Oef1
         {
             bool loop = true;
             string input = null;
+            int line = 0;
             do
             {
                 Console.Write("Give me a word :");
@@ -25,7 +26,11 @@ namespace Oef1
                 if (input != "end")
                 {
                     words.Add(input);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.SetCursorPosition(17+input.Length,line);
                     Console.WriteLine("Added!");
+                    Console.ResetColor();
+                    line++;
                 }
                 else
                 {
